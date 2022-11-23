@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="fonts" href="./fonts/Montserrat-Italic-VariableFont_wght.ttf">
+    <link rel="fonts" href="fonts/Montserrat-VariableFont_wght.ttf">
+    <title>Contáctanos</title>
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+    <header class="header">
+        <div class="menus">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menú</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html">Menú Principal</a>
+                    <a href="novedades.html">Novedades</a>
+                    <a href="servicios.html">Servicios</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="divart">
+            <h1 class="animate__animated animate__pulse">divart</h1>
+        </div>
+
+        <div class="buscador">
+            <img class="icon" src="./assets/icons/menu.png">
+        </div>
+    </header>
+
+    <section class="section">
+        <h5>Contáctanos para más preguntas, posibles compras y temas de ventas </h5>
+        <div class="contactos">
+            <div>
+                <h5>Contactar Directamente</h5>
+                <p>55-5281-0142<br>
+                  55-5281-0145</p>
+                <p>&nbsp;</p>
+            </div>
+            <div>
+                <h5>Visitar Nuestra Galeria</h5>
+                <p>Andrés Bello No. 29 local 2,<br>
+                  Col. Polanco México D.F. C.P. 11560</p>
+            </div>
+            <div>
+                <h5>Contactar Directamente</h5>
+                <p>+52 1 55-3012-7158<br>
+                  E-mail: isaacgreen@galeriadivart.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <form>
+            <fieldset>
+                <legend>Ponerse En contacto</legend>
+                <div class="contenedor__campos">
+                    <div class="nombre">
+                        <input class="inputs" class="input-text" type="text" placeholder="Nombre">
+                    </div>
+                    <div class="correo">
+                        <input class="inputs" class="input-text" type="email" placeholder="Correo Electronico">
+                    </div>
+                    <div class="tema">
+                        <input class="inputs" class="input-text" type="text" placeholder="Número telefónico">
+                    </div>
+                    <div class="mensaje">
+                        <textarea class="inputs" placeholder="Escriba Su mensaje Aqui"></textarea>
+                    </div>
+                </div>
+
+                <div class="boton__enviar">
+                    <input class="boton" type="submit" value="Enviar Mensaje">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1704.8244542463628!2d-98.20429439447018!3d19.005110373801955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfbf58ad2399d1%3A0xb517171394a5208b!2sFacultad%20de%20Ciencias%20de%20la%20Computaci%C3%B3n%20-%20BUAP!5e0!3m2!1ses-419!2smx!4v1668968988668!5m2!1ses-419!2smx"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__divart">
+            <h2 class="animate__animated animate__pulse animate__delay-3s">Divart</h2>
+        </div>
+        <div class="texto">
+            <br>
+            <p>2022 Divart &nbsp;&nbsp;<br>Hecho en México</p>
+            <audio preload="auto" controls="controls" autoplay="autoplay" >
+              <source src="assets/audio/Glimpsing Infinity - Asher Fulero.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="redes">
+            <h6>Siguenos en nuestras redes
+                <div>
+                    <img class="footer__img" src="./assets/icons/facebook.png">
+                    <img class="footer__img" src="./assets/icons/social.png">
+                    <img class="footer__img" src="./assets/icons/logotipo-de-instagram.png">
+                </div>
+            </h6>
+        </div>
+
+    </footer>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

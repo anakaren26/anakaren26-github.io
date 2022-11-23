@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/servicios.css">
+    <link rel="fonts" href="./fonts/Montserrat-Italic-VariableFont_wght.ttf">
+    <link rel="fonts" href="fonts/Montserrat-VariableFont_wght.ttf">
+    
+    <title>Servicios</title>
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	
+</head>
+
+<body>
+    <header class="header">
+        <div class="menus">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menú</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="contacto.html">Contacto</a>
+                    <a href="novedades.html">Novedades</a>
+                    <a href="index.html">Menú Principal</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="divart">
+            <h1 class="animate__animated animate__pulse">divart</h1>
+        </div>
+
+        <div class="buscador">
+            <img class="icon" src="./assets/icons/menu.png">
+        </div>
+    </header>
+
+    <section>
+        <img src="./assets/img/08.jpeg"
+    </section>
+
+    <section class="servicios">
+        <div>
+          <h3 class="animate__animated animate__pulse">Nuestros Servicios</h3>
+          <p>En Galería Divart ofrecemos a todos nuestros<br>
+            clientes los siguientes servicios: <br>
+            <br>
+            Enmarcado de pinturas. <br>
+            Restauración de obra de arte en general. <br>
+            Valuación de pinturas y esculturas.<br>
+            Colocación de obra de arte a domicilio. <br>
+            Envíos y exportación de pinturas y esculturas a cualquier <br>
+            parte del mundo. Empaque y embalaje<br>
+            profesional para obras de arte.<br>
+          </p>
+        </div>
+        <div>
+            <h3 class="animate__animated animate__pulse">Financiamiento</h3>
+            <p>Divart Galería de Arte, en apoyo a difundir el arte<br>
+              mexicano y a que todos tengan acceso a éste, ha <br>
+              implementado un sistema de financiamiento de acuerdo<br>
+              a sus necesidades. <br>
+  <br>
+              Contáctanos y con gusto te atenderemos.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__divart">
+            <h2 class="animate__animated animate__pulse animate__delay-3s">Divart</h2>
+        </div>
+        <div class="texto texto2">
+            <br>
+            <p class="footer2">2022 Divart &nbsp;&nbsp;<br>Hecho en México</p>
+        </div>
+        <audio controls="controls" autoplay="autoplay" >
+          <source src="assets/audio/Glimpsing Infinity - Asher Fulero.mp3" type="audio/mp3">
+        </audio>
+        <div class="redes">
+            <h6>Siguenos en nuestras redes
+                <div>
+                    <img class="footer__img" src="./assets/icons/facebook.png">
+                    <img class="footer__img" src="./assets/icons/social.png">
+                    <img class="footer__img" src="./assets/icons/logotipo-de-instagram.png">
+                </div>
+            </h6>
+        </div>
+
+    </footer>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

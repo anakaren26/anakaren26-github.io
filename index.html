@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="fonts" href="./fonts/Montserrat-Italic-VariableFont_wght.ttf">
+    <link rel="fonts" href="fonts/Montserrat-VariableFont_wght.ttf">
+    <title>Divart</title>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+    <header class="header">
+        <div class="menus">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menú</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="contacto.html">Contacto</a>
+                    <a href="novedades.html">Novedades</a>
+                    <a href="servicios.html">Servicios</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="divart">
+          <h1 class="animate__animated animate__pulse">divart </h1>
+        </div>
+
+        <div class="buscador">
+            <img class="icon" src="./assets/icons/menu.png">
+        </div>
+    </header>
+
+    <section>
+        <img src="./assets/img/09.jpeg"
+    </section>
+
+    <section class="historia">
+        <h2 class="animate__animated animate__pulse">Historia</h2>
+        <p class="parrafo_historia">Los inicios de Galería Divart se remontan a 1983, con la idea de Isaac Green de promover artistas mexicanos, es en esos años donde conoce artistas de la talla de Rufino Tamayo, Rossy Green, Víctor Villarreal, Víctor Gutiérrez, Leonardo Nierman, Marco Antonio Zepeda y gracias a ellos decide abrir su primera Galería la cual se localizaba en el Hotel Camino Real de la Ciudad de México.</p>
+        <p class="parrafo_historia"> Mas tarde, gracias a una visión emprendedora y conocimiento del arte del Lic. Isaac Green, la Galería Divart se instala en el Hotel JW Marriott en Polanco con el firme propósito de trabajar exclusivamente con artistas mexicanos e internacionalizarlos. </p>
+        <p class="parrafo_historia">Escultores como Heriberto Juárez, Salvador Jaramillo y Armando Amaya, se localizan en varios museos del mundo. Hoy Divart, Galería de Arte es una de las principales y más prestigiadas galerías de México, su objetivo sigue siendo el mismo: Dar a conocer el arte mexicano alrededor del mundo con una política de servicio, atención y calidad.</p>
+    </section>
+
+    <main class="main">
+        <div class="artistas ani animate__animated animate__pulse animate__delay-2s">
+            <h4 class="aux">Artista</h4>
+            <h4 class="aux">Artista</h4>
+            <h4>Artista</h4>
+            <h4 class="aux">Artista</h4>
+            <h4 class="aux">Artista</h4>
+        </div>
+
+        <div class="imagen">
+            <img src="./assets/img/01.png" class="animate__animated animate__bounceIn animate__delay-2s">
+            <img src="./assets/img/02.png" class="animate__animated animate__bounceIn animate__delay-2s">
+            <img src="./assets/img/03.png" class="animate__animated animate__bounceIn animate__delay-2s">
+            <img src="./assets/img/04.png" class="animate__animated animate__bounceIn animate__delay-2s">
+            <img src="./assets/img/05.png" class="animate__animated animate__bounceIn animate__delay-2s">
+            <img src="./assets/img/06.png" class="animate__animated animate__bounceIn animate__delay-2s">
+            <img src="./assets/img/07.png" class="animate__animated animate__bounceIn animate__delay-2s">
+            <img src="./assets/img/11.png" class="animate__animated animate__bounceIn animate__delay-2s">
+        </div>
+    </main>
+
+    <section class="historia">
+        <h2 class="animate__animated animate__pulse animate__delay-3s">Sobre Nosotros</h2>
+        <p> Somos una Galería de Arte dedidaca a ofertar obras de arte de distintos artistas mexicanos, además de contar con un financiamiento para la adquisición de las obras, comprometidos con la exposición y visión de artistas mexicanos, ubicados en una zona importante de la Ciudad de México siendo una de las más importantes dentro del rango de Galerías de Arte. </p>
+        <p>Todo en un solo lugar, para que nuestros clientes y amigos encuentren esa obra de arte que los acompañará toda su vida. Estamos a la vanguardia, con artistas reconocidos a nivel mundial, ofreciéndote siempre el mejor precio y el sello de calidad que nos ha distinguido todo este tiempo. </p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__divart">
+            <h2 class="animate__animated animate__pulse animate__delay-3s">Divart</h2>
+        </div>
+        <div class="texto">
+            <br>
+            <p class="final_f">2022 Divart &nbsp;&nbsp;<br>Hecho en México</p>
+            <audio controls="controls" autoplay="autoplay" >
+              <source src="assets/audio/Glimpsing Infinity - Asher Fulero.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="redes">
+            <h6>Siguenos en nuestras redes
+                <div>
+                    <img class="footer__img" src="./assets/icons/facebook.png">
+                    <img class="footer__img" src="./assets/icons/social.png">
+                    <img class="footer__img" src="./assets/icons/logotipo-de-instagram.png">
+                </div>
+            </h6>
+        </div>
+
+    </footer>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
